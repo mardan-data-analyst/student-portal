@@ -11,8 +11,6 @@ df = pd.read_csv('Math_Results.csv', skipinitialspace=True)
 for i in range(0, df.values.size):
     row = df.values[i][0].split(";")
 
-
-
     # We are creating our model
     student  = Student(row[0], row[1], row[2], int(row[3]), isPassed(gradeStudent(int(row[3]))))
     #We are checking if the student is passed or not,, then we are adding them to their corresponding lists
