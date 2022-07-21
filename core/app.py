@@ -22,7 +22,7 @@ for i in range(iterations):
         schoolNo = input("schoolNo: ")
         point = int(input("Point: "))
         #We are creating our model
-        student  = Student(name, surname, schoolNo, point, isPassed(gradeStudent(point)))
+        student  = Student(name, surname, schoolNo, point, gradeStudent(point), isPassed(gradeStudent(point)))
         #We are checking if the student is passed or not,, then we are adding them to their corresponding lists
         if student.passed:
             passed_students.append(student)
