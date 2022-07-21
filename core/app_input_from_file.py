@@ -21,7 +21,6 @@ for i in range(0, df.values.size):
 
 
 
-
 # We are converting list of students to DF then print and save it csv file
 df_passed = pd.DataFrame([t.__dict__ for t in passed_students])
 df_passed = df_passed.loc[:, df_passed.columns!='passed']
