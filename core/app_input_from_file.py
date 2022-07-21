@@ -26,12 +26,12 @@ df_passed = pd.DataFrame([t.__dict__ for t in passed_students])
 df_passed = df_passed.loc[:, df_passed.columns!='passed']
 print('Passed Students')
 print(df_passed)
-df_passed.to_csv('passed_students.csv')
+df_passed.to_excel('passed_students.xlsx')
 
 
 print('------')
 df_failed = pd.DataFrame([t.__dict__ for t in failed_students])
 df_failed = df_failed.loc[:, df_failed.columns !='passed']
-df_failed.to_csv('failed_students.csv')
+df_failed.to_excel('failed_students.xlsx')
 print('Failed Students')
 print(df_failed)
