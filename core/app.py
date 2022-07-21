@@ -9,7 +9,7 @@ failed_students = []
 
 # We are taking number of students will be in our list
 try:
-    iterations =  int(input("Please enter number of iterations: "))
+    iterations = int(input("Please enter number of iterations: "))
 except:
     # in case if there is not correct type inserted we will throw this error
     raise TypeError("Type is not correct")
